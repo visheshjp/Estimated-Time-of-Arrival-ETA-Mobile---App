@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ETA</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="btncreate">Create Trip</string>
+    <string name="btnview">View Trip</string>
+    <string name="btnexit">Exit</string>
+    <string name="headwelcome">Welcome to Vishesh Trip Management</string>
+    <string name="headcreatetrip">Create Trip</string>
+    <string name="labeltripname">Trip Name</string>
+    <string name="labeldestination">Meet Point</string>
+    <string name="nearby">Near By</string>
+    <string name="labeldate">Date</string>
+    <string name="labeltime">Estimated Time</string>
+    <string name="btncreatetrip">Create Trip</string>
+    <string name="headviewtrip">View Trip</string>
+    <string name="btndate">Date</string>
+    <string name="btnadd">Add</string>
+    <string name="labelfriend">Friend</string>
+    <string name="labelfriendname">Name</string>
+    <string name="labelfriendlocation">Location</string>
+    <string name="labelcreator">Organizer Name</string>
+    <string name="headviewtriphistory">Past Trips Created</string>
+    <string name="getstatus">Latest Trip Status</string>
+    <string name="btnviewhistory">View Trip Details</string>
+    <string name="btnaboutus">About US</string>
+    <string name="btngetstatus">Get Status</string>
+    
+  <!--   <string name="btnviewhistory">View Trip History</string> -->
+    
+    <string name="btndelete">Del</string>
+    <string name="labeltripid">Trip Id</string>
+    <string name="headhistory">Trip History</string>
+    <string name="labeltriprefid">Server Reference ID</string>
+    <string name="labeldistleft">Distance Left</string>
+    <string name="labeltimeleft">Time Left</string>
+    <string name="btnfindplace">Search Places</string>
+    <string name="btncanceltrip">Cancel Trip</string>
+    <string name="btnback">Back</string>
+
+</resources>

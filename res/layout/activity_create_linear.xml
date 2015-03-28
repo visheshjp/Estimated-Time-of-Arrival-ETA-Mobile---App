@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".CreateTripActivity" >
+
+<LinearLayout
+    style="@style/LayoutL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    tools:context=".CreateTripActivity" >
+
+	<TextView
+	    android:id="@+id/headcreatetrip"
+	    style="@style/Header"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:text="@string/headcreatetrip" />
+	
+	<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal">
+    
+		<TextView
+		    android:id="@+id/labeltripname"
+		    style="@style/MenuLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:minWidth="150dp"
+		    android:text="@string/labeltripname" />
+		
+		<EditText
+		    android:id="@+id/edittripname"
+		    style="@style/Menubox"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:ems="10" />
+
+	</LinearLayout>
+	
+<!-- Setting the destination -->
+	<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal">
+		
+		<TextView
+		    android:id="@+id/labeldestination"
+		    style="@style/MenuLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:minWidth="150dp"
+		    android:text="@string/labeldestination" />
+		
+		<EditText
+		    android:id="@+id/editdestname"
+		    style="@style/Menubox"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:ems="10" />
+		
+		
+	</LinearLayout>
+	
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal">
+	    
+	    
+	    <TextView
+		    android:id="@+id/nearby"
+		    style="@style/MenuLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:minWidth="150dp"
+		    android:text="@string/nearby" />
+		
+		<EditText
+		    android:id="@+id/viewnearby"
+		    style="@style/Menubox"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:ems="10" />
+	</LinearLayout>
+	
+<!-- Setting the destination -->
+
+
+
+	
+	<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:layout_marginTop="20dp" 
+    android:orientation="horizontal">
+		<TextView
+		    android:id="@+id/labelcreator"
+		    style="@style/MenuLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:minWidth="150dp"
+		    android:text="@string/labelcreator" />
+		
+		<EditText
+		    android:id="@+id/editcreatorname"
+		    style="@style/Menubox"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:ems="10" />
+	</LinearLayout>
+	
+	<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:layout_marginTop="20dp" 
+    android:orientation="horizontal">
+		<TextView
+		    android:id="@+id/labeldate"
+		    style="@style/MenuLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:minWidth="150dp"
+		    android:text="@string/labeldate" />
+	 
+		<Button
+		    android:id="@+id/btndate"
+		    style="?android:attr/buttonStyleSmall"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:onClick="showDatePickerDialog"
+		    android:text="@string/btndate"
+		    android:textSize="12sp" />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/friendlayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="20dp"
+	    android:background="#CCb3b3b3"
+	    android:orientation="vertical" >
+
+	    <!-- Persons HEADING -->    
+	    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" 
+		    android:layout_marginTop="10dp"
+		    android:orientation="horizontal">
+
+	        <Button
+	            android:id="@+id/btnadd"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:onClick="onClick"
+	            android:padding="0dp"
+	            android:text="@string/btnadd"
+	            android:textSize="15sp" />
+	        
+	        <Button
+	            android:id="@+id/btndelete"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="3dp"
+	            android:onClick="onClick"
+	            android:padding="0dp"
+	            android:text="@string/btndelete"
+	            android:textSize="15sp" />
+		        
+		    <TextView
+		        android:id="@+id/labelname"
+		        style="@style/MenuLabel"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:layout_marginLeft="5dp"
+		        android:text="@string/labelfriendname"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/labellocation"
+		        style="@style/MenuLabel"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:layout_marginLeft="40dp"
+		        android:text="@string/labelfriendlocation"
+		        android:textStyle="bold" />
+	    </LinearLayout>
+	    
+	</LinearLayout>
+	
+	<Button
+	    android:id="@+id/btncreatetrip"
+	    style="@style/Button"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="30dp"
+	    android:background="@android:drawable/btn_default"
+	    android:onClick="onClick"
+	    android:text="@string/btncreatetrip" />
+	
+	<Button
+	    android:id="@+id/btnfindplace"
+	    style="@style/Button"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="30dp"
+	    android:background="@android:drawable/btn_default"
+	    android:onClick="onClick"
+	    android:text="@string/btnfindplace" />
+	
+	<Button
+	    android:id="@+id/btncanceltrip"
+	    style="@style/Button"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="30dp"
+	    android:background="@android:drawable/btn_default"
+	    android:onClick="onClick"
+	    android:text="@string/btncanceltrip" />
+	
+</LinearLayout>
+</ScrollView>
